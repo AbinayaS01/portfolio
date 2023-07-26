@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Interests</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Welcome! It's Me,</h3>
+            <h1>Abinaya</h1>
+            <h3>I'm a <span class="multiple-text"></span> </h3>
+            <p>Hey All. This is me , Abinaya. I am Computer Science Engineer with a huge interest in Web Development, App Development and Machine Learning.</p>
+            <div class="social-media">
+                <a href="spabinaya2003@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
+                <a href="https://github.com/AbinayaS01" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/__a.b.i._/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/sabinaya01/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1WINkvllB9drMSXGIuXKKXMx4eDWsplCp/view?usp=drive_link" class="btn" download target="_blank">Download Resume</a>
+        </div>
+
+        <div class="home-img">
+            <img src="/home-image.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/about-image.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Software Developer</h3>
+            <p>I am Abinaya. I was born and brought up in Coimbatore. Having no idea in the field of computer science till the completion of school, I opted for BE Computer Science and Engineering after my school. </p>
+            <a href="#extra" class="btn" id="read" onclick="toggleVisibility()">Read More</a>
+            <p id="extra">While jumping into the new pool, I did not expect that I will contribute myself for this field of study. But now, I am training myself in the domains of Web Development , App Development , Machine Learning. Now I work my best to create my own projects. I believe  the way I chose after my schooling will lead me to suceed in my life one day.Other than my interests in computer, I like to write tamil poems and I love praying and chanting. I like to listen music. So at the most work I do if I am not in studying is to chant any slogans or to hear music. My ultimate aim to make my parents feel proud. And anyone who need to know me more , Please do check out my resume. For contacts, I have given my email, github and linkedin profiles. Thank You.   </p>
+        </div>
+    </section>
+
+
+    <!-- services section design -->
+
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Interests</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt' ></i>
+                <h3>Web Development</h3>
+                <p>I got interest in web Development after started learning and solving problems in a website called FreeCodeCamp <span id="points1"></span>
+                <span id="extra1">I myself trained with more Frontend Development challenges from the website frontendmentor and keep on doing it for more knowledge. Also, I have a keen interest in Java which can be used in backend. I am now learning sql for knowing about database and its function. Further, I am ready to learn frameworks needed for the projects</span></p>
+                <a href="#extra1" id="read1" class="btn" onclick="webToggle()">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-code-curly'></i>
+                <h3>App Development</h3>
+                <p>My interest in the field of App development in very recent because of an internship.  <span id="points2"></span>
+                    <br>
+                    <span id="extra2">I recently got an internship in a company where I am asked to learn app development. The company is now training me with dart and flutter and I am sure to learn more in App development in the upcoming days. Dart will help to develop apps for android, apple and desktop level of views .</span> </p>
+                    <a href="#extra2" id="read2" class="btn" onclick="appsToggle()" >Read More</a>
+                </div>
+            <div class="services-box">
+                <i class='bx bxs-network-chart'></i>
+                <h3>Machine Learning</h3>
+                <p>The most interesting and the one I like to work anytime is machine learning<span id="points3"></span>
+                    <br>
+                    <span id="extra3">I work in machine learning using a simple and a easy programming language called python. I myself got an interest in it and developed some mini projects and understood some concepts in it. I am continuing to work with machine learning projects as it will give a enthusiasm to us when they predict things with which we trained the model.</span></p>
+                    <a href="#extra3" id="read3" class="btn" onclick="mlToggle()">Read More</a>
+                </div>
+        </div> 
+    </section>
+
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Project</span></h2>
+        
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Frontend Development</h4>
+                    <p>The challenge is to build out this landing page from the designs provided in the starter codeThe users should be able to view the optimal layout for the page depending on their device's screen size and see hover states for all interactive elements on the page</p>
+                    <a href="https://github.com/AbinayaS01/NewBie-Frontend_Mentor_Challenges/tree/main/huddle-landing-page-with-single-introductory-section-master" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Frontend Development</h4>
+                    <p>The challenge is to build out this order summary card component and get it looking as close to the design as possible.The users should be able to See hover states for interactive elements</p>
+                    <a href="https://github.com/AbinayaS01/NewBie-Frontend_Mentor_Challenges/tree/main/order-summary-component-main" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            
+            <div class="portfolio-box">
+                <img src="portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Frontend Development</h4>
+                    <p>The task is to build out the project to the designs inside the /design folder. We will find both a mobile and a desktop version of the design.</p>
+                    <a href="https://github.com/AbinayaS01/NewBie-Frontend_Mentor_Challenges/tree/main/profile-card-component-main" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio4.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Frontend Development</h4>
+                    <p>The challenge is to build out this QR code component and get it looking as close to the design as possible.</p>
+                    <a href="https://github.com/AbinayaS01/NewBie-Frontend_Mentor_Challenges/tree/main/qr-code-component-main" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio5.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Frontend Development</h4>
+                    <p>The challenge is to build out this results summary component and get it looking as close to the design as possible.We can use any tools you like to help you complete the challenge.</p>
+                    <a href="https://github.com/AbinayaS01/NewBie-Frontend_Mentor_Challenges/tree/main/results-summary-component-main" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Frontend Development</h4>
+                    <p>The task is to build out the project to the designs inside the /design folder. We will find both a mobile and a desktop version of the design.</p>
+                    <a href="https://github.com/AbinayaS01/NewBie-Frontend_Mentor_Challenges/tree/main/product-preview-card-component-main" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="wine prediction.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>AI/ML</h4>
+                    <p>Here we will predict the quality of wine on the basis of given features. We use the wine quality dataset available on Internet for free. This dataset is responsible for affecting the quality of the wine.</p>
+                    <a href="https://github.com/AbinayaS01/AI-ML-projects/tree/main/wine" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="laptop price prediction.jpeg" alt="">
+                <div class="portfolio-layer">
+                    <h4>AI/ML</h4>
+                    <p>We will make a project to predict the price of laptops based on user input.If people want to buy a new laptop, then our model should have all the prices sorted by their configuration. </p>
+                    <a href="https://github.com/AbinayaS01/AI-ML-projects/tree/main/laptop" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="iris classification.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>AI/ML</h4>
+                    <p>Iris flower classification is a very popular machine learning project. The iris dataset contains three classes of flowers and each class contains 4 features.The aim of this is to predict flowers based on their features.</p>
+                    <a href="https://github.com/AbinayaS01/AI-ML-projects/tree/main/iris" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+    
+        <form action="mailto:spabinaya2003@gmail.com" method="get" enctype="text/plain">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name"  name="userName" id="userName">
+                <input type="email" placeholder="Email Address" name="email" id="email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number"name="mNum" id="mNum">
+                <input type="text" placeholder="Email Subject" name="subject" id="subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    
+    
+    </section>
+        <!-- footer design -->
+
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Abinaya | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+            </div>
+        </footer>
+
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!-- typed js -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+        <!-- custom js -->
+        <script src="script.js"></script>
+</body>
+
+
+
+</body>
+</html>
